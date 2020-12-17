@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home"
 import About from "./components/About"
-import SinglePost from "./components/SinglePost"
 import Post from "./components/Post"
 import Project from "./components/Project"
 import NavBar from "./components/NavBar"
@@ -17,7 +16,6 @@ function App() {
     <Router>
       <NavBar />
       <Switch>
-
         <Route path="/about">
           <About />
         </Route>
@@ -26,9 +24,6 @@ function App() {
         </Route>
         <Route path="/project">
           <Project />
-        </Route>
-        <Route path="/post/:slug">
-          <SinglePost />
         </Route>
         <Route path="/">
           <Home />
